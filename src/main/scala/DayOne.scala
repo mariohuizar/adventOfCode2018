@@ -32,7 +32,7 @@ object DayOne extends App {
     innerLoop(inputAsInts.toList, Nil)
   }
 
-  private val toIntSequence = (rawInput: String) =>
+  private def toIntSequence (rawInput: String) =
     rawInput.stripMargin.split('\n').toSeq.map(_.toInt)
 
   print(s"""Results:

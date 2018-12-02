@@ -9,7 +9,7 @@ class DayOneSpec extends WordSpec with Matchers {
                                 |+2
                                 |-10"""
 
-        DayOne.sumAllInputs(rawInput) === -16
+        DayOne.sumAllInputs(rawInput) shouldBe -16
       }
     }
 
